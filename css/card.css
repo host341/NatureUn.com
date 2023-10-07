@@ -1,0 +1,429 @@
+.main_gallery {
+    background-color: black;
+}
+
+.main_heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+.main_heading h3 {
+    color: #00ff89;
+    border-bottom: 4px solid #00ff89;
+    padding: 0px 2px;
+    margin: 5px 10px;
+    border-radius: 5px;
+    font-size: 22px;
+    font-family: cursive;
+    letter-spacing: 1px;
+
+}
+
+.main_heading span {
+    color: white;
+    font-size: 19px;
+    font-style: italic;
+    font-weight: 700;
+    font-family: fangsong;
+    letter-spacing: 1px;
+}
+
+/* MAin Block ======= */
+.section_block {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.half_blocks {
+    
+    display: flex;
+    flex-direction: column;
+    margin: 10px 5px;
+    position: relative;
+    border: 3px solid white;
+    border-radius: 4px;
+}
+
+.block_img {
+    max-height: 370px;
+    max-width: 270px;
+    height: 350px;
+    width: 250px;
+    overflow: hidden;
+}
+
+.block_img img {
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+.block_img img:hover{
+    transform: scale(1.5);
+}
+
+.block_split{
+    background: linear-gradient(187deg,#00000000 42%, #00ff89);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transform: translate(0px , 0px);
+    width: 100%;
+    height: 11%;
+    
+}
+.block_split.active{
+    background: linear-gradient(187deg,#00000000 0%, #00ff89);
+    height: 100%;
+
+}
+
+
+
+.block_text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 10px 10px; */
+    /* border: 2px solid red; */
+}
+.block_text h3{
+    color: white;
+    margin: 5px 5px;
+    font-size: 18px;
+    font-family: cursive;
+    letter-spacing: 1px;
+    border-bottom: 2px solid white
+}
+
+.block_btn{
+    background-color: transparent;
+    border: 2px solid #00ff89;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 4px 7px;
+    font-family: cursive;
+    display: block;
+    text-decoration: none;
+    margin: 5px 5px;
+    transition: .3s;
+    
+}
+.block_btn:hover{
+    background-color: white;
+    border: 2px solid #00ff89;
+    color: #00ff89;
+}
+.block_btn.active{
+    display: none;
+}
+#cross{
+   font-size: 26px;
+   transition: .3s;  
+   margin: 0px 5px;
+   display: none;
+   color: white;
+}
+#cross:hover{
+    color: #00ff89;
+}
+#cross.active{
+    display: block;
+}
+.block_p{
+    margin: 5px 2px;
+    display: none;
+}
+
+
+.block_p.active{
+    display: block;
+}
+
+.block_p p{
+    color: white;
+    font-size: 16px;
+    font-family: cursive;
+    text-align: center;
+    letter-spacing: 1px;
+
+}
+
+
+
+/* 2.Code for card==== */
+
+
+.block_split2{
+    background: linear-gradient(187deg,#00000000 42%, #00ff89);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transform: translate(0px , 0px);
+    width: 100%;
+    height: 11%;
+    
+}
+.block_split2.active{
+    background: linear-gradient(187deg,#00000000 0%, #00ff89);
+    height: 100%;
+
+}
+
+
+
+.block_text2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 10px 10px; */
+    /* border: 2px solid red; */
+}
+.block_text2 h3{
+    color: white;
+    margin: 5px 5px;
+    font-size: 18px;
+    font-family: cursive;
+    letter-spacing: 1px;
+    border-bottom: 2px solid white
+}
+
+.block_btn2{
+    background-color: transparent;
+    border: 2px solid #00ff89;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 4px 7px;
+    font-family: cursive;
+    display: block;
+    text-decoration: none;
+    margin: 5px 5px;
+    transition: .3s;
+}
+.block_btn2:hover{
+    background-color: white;
+    border: 2px solid #00ff89;
+    color: #00ff89;
+}
+.block_p2{
+    margin: 5px 2px;
+    display: none;
+}
+
+
+.block_p2.active{
+    display: block;
+}
+
+.block_p2 p{
+    color: white;
+    font-size: 16px;
+    font-family: cursive;
+    text-align: center;
+    letter-spacing: 1px;
+
+}
+
+.block_btn2.active{
+    display: none;
+}
+#cross2{
+   font-size: 26px;
+   margin: 0px 5px;
+   transition: .3s;  
+   display: none;
+   color: white;
+}
+#cross2:hover{
+    color: #00ff89;
+}
+#cross2.active{
+    display: block;
+}
+
+/* 3.Code for card==== */
+
+
+.block_split3{
+    background: linear-gradient(187deg,#00000000 42%, #00ff89);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transform: translate(0px , 0px);
+    width: 100%;
+    height: 11%;
+    
+}
+.block_split3.active{
+    background: linear-gradient(187deg,#00000000 0%, #00ff89);
+    height: 100%;
+
+}
+
+
+
+.block_text3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 10px 10px; */
+    /* border: 2px solid red; */
+}
+.block_text3 h3{
+    color: white;
+    margin: 5px 5px;
+    font-size: 18px;
+    font-family: cursive;
+    letter-spacing: 1px;
+    border-bottom: 2px solid white
+}
+
+.block_btn3{
+    background-color: transparent;
+    border: 2px solid #00ff89;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 4px 7px;
+    font-family: cursive;
+    display: block;
+    text-decoration: none;
+    margin: 5px 5px;
+    transition: .3s;
+}
+.block_btn3:hover{
+    background-color: white;
+    border: 2px solid #00ff89;
+    color: #00ff89;
+}
+.block_p3{
+    margin: 5px 2px;
+    display: none;
+}
+
+
+.block_p3.active{
+    display: block;
+}
+
+.block_p3 p{
+    color: white;
+    font-size: 16px;
+    font-family: cursive;
+    text-align: center;
+    letter-spacing: 1px;
+
+}
+
+.block_btn3.active{
+    display: none;
+}
+#cross3{
+    font-size: 26px;
+   margin: 0px 5px;
+   transition: .3s;  
+   color: white;
+   display: none;
+}
+#cross3:hover{
+    color: #00ff89;
+}
+#cross3.active{
+    display: block;
+}
+/* 4.Code for card==== */
+
+
+.block_split4{
+    background: linear-gradient(187deg,#00000000 42%, #00ff89);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transform: translate(0px , 0px);
+    width: 100%;
+    height: 11%;
+    
+}
+.block_split4.active{
+    background: linear-gradient(187deg,#00000000 0%, #00ff89);
+    height: 100%;
+
+}
+
+
+
+.block_text4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 10px 10px; */
+    /* border: 2px solid red; */
+}
+.block_text4 h3{
+    color: white;
+    margin: 5px 5px;
+    font-size: 18px;
+    font-family: cursive;
+    letter-spacing: 1px;
+    border-bottom: 2px solid white
+}
+
+.block_btn4{
+    background-color: transparent;
+    border: 2px solid #00ff89;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 4px 7px;
+    font-family: cursive;
+    display: block;
+    text-decoration: none;
+    margin: 5px 5px;
+    transition: .3s;
+}
+.block_btn4:hover{
+    background-color: white;
+    border: 2px solid #00ff89;
+    color: #00ff89;
+}
+.block_p4{
+    margin: 5px 2px;
+    display: none;
+}
+
+
+.block_p4.active{
+    display: block;
+}
+
+.block_p4 p{
+    color: white;
+    font-size: 16px;
+    font-family: cursive;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.block_btn4.active{
+    display: none;
+}
+#cross4{
+   font-size: 26px;
+   margin: 0px 5px;
+   transition: .3s;  
+   display: none;
+    color: white;
+}
+#cross4:hover{
+   color: #00ff89;
+}
+#cross4.active{
+    display: block;
+}
+
+
